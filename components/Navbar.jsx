@@ -5,20 +5,18 @@ import Link from 'next/link';
 import { AiOutlineShopping } from 'react-icons/ai'
 
 import { Cart } from './';
-import { useStateContext } from '../lib/StateContext';
-
+import { useStateContext } from '../context/StateContext'; 
 const Navbar = () => {
   const { showCart, setShowCart, totalQuantities } = useStateContext();
 
   return (
     <div className="navbar-container">
       <p className="logo">
-        {/* <Link href="/">SMC</Link> */}
         <Image
-            src="/images/smlog.png" // Correct path for images in the public folder
+            src="/images/smlog.png" 
             alt="SMC Logo"
-            width={100} // Set appropriate width
-            height={100} // Set appropriate height
+            width={100}
+            height={100}
           />
       </p>
 
